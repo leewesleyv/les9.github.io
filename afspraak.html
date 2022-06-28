@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tandartsafspraak</title>
+    </head>
+    <body>
+        <h1>Tandartsafspraak</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, est at dapibus sagittis,
+            augue orci fermentum ipsum, ut dignissim tortor magna vel nisl. Fusce sed urna at libero gravida fermentum.
+            Mauris porta ex a facilisis facilisis. Quisque ultrices turpis et ipsum luctus tristique.
+            Pellentesque ac neque magna. Curabitur mattis eros eget nisl luctus lobortis eu ac dolor.
+            Cras nec volutpat urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere metus
+            sed mi tincidunt, interdum ultrices massa lacinia. Donec pharetra massa a rutrum dignissim. Vivamus euismod
+            aliquet odio sed gravida.
+        </p>
+
+        <!-- Images -->
+        <img src="https://picsum.photos/300/300?id=1" width="300" alt="Gebouw van de tandartspraktijk">
+        <img src="https://picsum.photos/300/300?id=2" width="300" alt="Wachtruimte van de tandartspraktijk">
+        <img src="https://picsum.photos/300/300?id=3" width="300" alt="Parkeerplaats bij tandartspraktijk">
+
+        <!-- Form -->
+        <form action="https://formspree.io/f/xrgjjzdg" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Persoonlijke gegevens</legend>
+                <label for="naam">Naam:</label><input id="naam" type="text" name="naam"><br><br>
+                <label for="adres">Adres:</label><input id="adres" type="text" name="adres"><br><br>
+                <label for="tel">Telefoonnummer:</label><input id="tel" type="tel" name="telefoonnummer"><br><br>
+                <label for="email">Email:</label><input id="email" type="email" name="email"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Beschrijving van de klachten</legend>
+
+                <!-- Checkboxes -->
+                Heeft last van de volgende klachten:
+                <label><input type="checkbox">Hoofdpijn</label>
+                <label><input type="checkbox">Misselijkheid</label>
+                <label><input type="checkbox">Moe</label>
+                <label><input type="checkbox">Slecht slapen</label>
+                <label><input type="checkbox">Pijn</label>
+                <br><br>
+
+                <!-- Document-->
+                Upload een foto van het gebied
+                <input type="file" name="document">
+            </fieldset>
+            <fieldset>
+                <legend>Toelichting van de klachten</legend>
+                <label for="opmerking">Opmerking:</label><input id="opmerking" type="text" name="opmerking" maxlength="1500"><br><br>
+                <label for="datum">Klachten zijn begonnen op:</label><input type="date" id="datum" name="datum">
+            </fieldset>
+
+            <button type="submit">Verstuur</button>
+        </form>
+    </body>
+</html>
